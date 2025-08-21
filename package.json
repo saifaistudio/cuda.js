@@ -1,0 +1,46 @@
+{
+  "name": "cuda.js",
+  "version": "0.1.0",
+  "description": "CUDA bindings for Node.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npm run build:native && npm run build:ts",
+    "build:native": "node-gyp rebuild",
+    "build:ts": "tsc",
+    "clean": "rimraf lib build",
+    "prepare": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "example:basic": "node examples/basic.js"
+  },
+  "keywords": [
+    "cuda",
+    "gpu",
+    "parallel",
+    "computing",
+    "nvidia",
+    "native-addon"
+  ],
+  "author": "Sammwy",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0",
+    "node-addon-api": "^7.1.1",
+    "node-gyp": "^11.4.1"
+  },
+  "files": [
+    "lib/",
+    "src/native/",
+    "binding.gyp"
+  ],
+  "gypfile": true
+}

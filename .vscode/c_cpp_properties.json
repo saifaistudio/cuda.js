@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "compilerPath": "/usr/bin/g++",
+            "intelliSenseMode": "linux-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/node",
+                "${workspaceFolder}/node_modules/node-addon-api",
+                "${workspaceFolder}/native",
+                "/usr/local/cuda/include"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/usr/include/node",
+                    "${workspaceFolder}/node_modules/node-addon-api",
+                    "/usr/local/cuda/include",
+                    "${workspaceFolder}/native"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
