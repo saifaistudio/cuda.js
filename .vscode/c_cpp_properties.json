@@ -1,30 +1,55 @@
 {
-    "configurations": [
-        {
-            "name": "Linux",
-            "compilerPath": "/usr/bin/g++",
-            "intelliSenseMode": "linux-gcc-x64",
-            "includePath": [
-                "${workspaceFolder}/**",
-                "/usr/include/node",
-                "${workspaceFolder}/node_modules/node-addon-api",
-                "${workspaceFolder}/native",
-                "/usr/local/cuda/include"
-            ],
-            "defines": [],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "browse": {
-                "path": [
-                    "${workspaceFolder}",
-                    "/usr/include/node",
-                    "${workspaceFolder}/node_modules/node-addon-api",
-                    "/usr/local/cuda/include",
-                    "${workspaceFolder}/native"
-                ],
-                "limitSymbolsToIncludedHeaders": true
-            }
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "name": "Linux",
+      "compilerPath": "/usr/bin/g++",
+      "intelliSenseMode": "linux-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include/node",
+        "${workspaceFolder}/node_modules/node-addon-api",
+        "${workspaceFolder}/native",
+        "/usr/local/cuda/include"
+      ],
+      "defines": [],
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "/usr/include/node",
+          "${workspaceFolder}/node_modules/node-addon-api",
+          "/usr/local/cuda/include",
+          "${workspaceFolder}/native"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    },
+    {
+      "name": "Windows",
+      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe",
+      "intelliSenseMode": "msvc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/Users/sam/AppData/Local/node-gyp/Cache/20.12.2/include/node",
+        "${workspaceFolder}/node_modules/node-addon-api",
+        "${workspaceFolder}/native",
+        "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/include"
+      ],
+      "defines": ["_CRT_SECURE_NO_WARNINGS"],
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "C:/Users/sam/AppData/Local/node-gyp/Cache/20.12.2/include/node",
+          "${workspaceFolder}/node_modules/node-addon-api",
+          "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/include",
+          "${workspaceFolder}/native"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ],
+  "version": 4
 }
